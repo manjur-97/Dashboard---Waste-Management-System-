@@ -1,0 +1,82 @@
+
+body {
+  background-color: #E0E3EA;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.sideCard {
+  background-color: white;
+  margin-bottom: 10px;
+  height: 140px;
+}
+
+.rightCard {
+  background-color: white;
+  margin-bottom: 10px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.specialCard {
+  background-color: white;
+  margin-bottom: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+
+
+  column-gap: 10px;
+}
+
+.second {
+  height: 180px;
+  margin-top: 10px;
+}
+
+.third {
+  height: 450px;
+  margin-top: 10px;
+
+}
+
+.forth {
+  height: 90px;
+  margin-top: 10px;
+
+}
+
+.rightMiddle {
+  background-color: white;
+  margin-bottom: 10px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.rightMiddle2 {
+  background-color: white;
+  margin-bottom: 10px;
+  height: 100%;
+  flex-grow: 1;
+}
+.card{
+    border: none !important;
+    border-radius: 0px !important;
+}
+.SelectSideCard{
+    border: none;
+    background-color: #E0E3EA;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+}
