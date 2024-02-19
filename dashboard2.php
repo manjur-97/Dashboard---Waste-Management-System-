@@ -11,110 +11,96 @@
 </head>
 
 <body>
-    <div class="container-fluid ">
-        <div class="row mt-2">
-            <div class="col-3">
-                <div class="card sideCard">
-                    <select name="" id="" class="SelectSideCard">
-                        <option value="">Choose a period</option>
+    <nav>
+        <div class="nav-header">
+            <div>
+                <h5>Waste Management System</h5>
+            </div>
+            <div class="d-flex">
+                <div class="language">
+                    <select name="" id="">
+                        <option value="">English</option>
                     </select>
 
                 </div>
-                <div class="card sideCard">
+                <div class="language-clear">
+                    <button>X</button>
+                </div>
 
-                    <p class="text-center mt-2 ">Unloaded Containers of Plan(yesterday)</p>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container-fluid ">
+        <div class="row mt-2">
+            <div class="col-2">
+                <div class="card sideCardClock ">
+
+
+                </div>
+
+                <div class="card sideCardVeh   d-flex justify-content-center">
+                    <p class="text-center mt-2 text-light">Total Vehicle Status</p>
+
+                </div>
+                <div class="card sideCard  d-flex justify-content-center ">
+                    <p class="text-center mt-2">Total Compressor</p>
                     <div class="d-flex justify-content-around align-items-center">
-                        <h3 style="color: #006A67;">1.3%</h3>
+                        <img src="img/Picture1.png" alt="" width="100px">
                         <h1 style="color: #E3A837;">244</h1>
                     </div>
 
                 </div>
-                <div class="card sideCard">
-
-                    <p class="text-center mt-2">Brooms are off the Plan(yesterday)</p>
+                <div class="card sideCard  d-flex justify-content-center ">
+                    <p class="text-center mt-2">Total Road cleaner</p>
                     <div class="d-flex justify-content-around align-items-center">
-                        <h3 style="color: #006A67;">70.2%</h3>
-                        <h1 style="color: #E3A837;">40</h1>
+                        <img src="img/Picture1.png" alt="" width="100px">
+                        <h1 style="color: #E3A837;">35</h1>
                     </div>
 
                 </div>
-                <div class="card sideCard">
-                    <p class="text-center mt-2">Brooms According to Plan(yesterday)</p>
+                <div class="card sideCard  d-flex justify-content-center ">
+                    <p class="text-center mt-2">Total Container washer</p>
                     <div class="d-flex justify-content-around align-items-center">
-                        <h3 style="color: #006A67;">50.9%</h3>
-                        <h1 style="color: #E3A837;">29</h1>
+                        <img src="img/Picture1.png" alt="" width="100px">
+                        <h1 style="color: #E3A837;">24</h1>
                     </div>
 
                 </div>
-                <div class="card sideCard">
 
-                    <p class="text-center mt-2">Laundry Containers of Plan(yesterday)</p>
-                    <div class="d-flex justify-content-around align-items-center">
-                        <h3 style="color: #006A67;">0.0%</h3>
-                        <h1 style="color: #E3A837;">0</h1>
-                    </div>
 
-                </div>
 
 
             </div>
-            <div class="col-9">
-                <div class="row ">
-                    <div class="col first">
-                        <div class="card rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="me-3">Last 60 Days</h6>
-                        </div>
-                        <div class="card rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="me-3">Something</h6>
-                        </div>
-                        <div class="card rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="me-3">Quarterty</h6>
-                        </div>
-                        <div class="card rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="me-3">Something</h6>
-                        </div>
-                        <div class="card rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="me-3">Something</h6>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-10">
 
 
                 <div class="row mt-2">
                     <div class="col-4">
-                        <div class="card rightMiddle ">
 
-                            <p class="text-center mt-2 ">Unloaded Containers of Plan(yesterday)</p>
-                            <div class="d-flex justify-content-around align-items-center mt-4">
-                                <div><img src="img/Picture1.png" alt="" width="60px"></div>
-                                <h3 style="color: #006A67;">25.0%</h3>
-                                <h1 style="color: #E3A837;">40</h1>
+                        <div class="card rightMiddle2 ">
+                            <div class="text-center p-4">
+                                <p>Total Compressor</p>
                             </div>
+                            <div class="w-100 chart-container" id="chart4"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card rightMiddle2 ">
+                            <div class="text-center p-4">
+                                <p>Total Road cleaner</p>
+                            </div>
+
+                            <div class="w-100 chart-container col-10" id="chart5"></div>
 
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card rightMiddle">
-
-                            <p class="text-center mt-2 ">Unloaded Containers of Plan(yesterday)</p>
-                            <div class="d-flex justify-content-around align-items-center mt-4">
-                                <div><img src="img/Picture2.png" alt="" width="60px"></div>
-                                <h3 style="color: #006A67;">35.1%</h3>
-                                <h1 style="color: #E3A837;">20</h1>
+                        <div class="card rightMiddle2">
+                            <div class="text-center p-4">
+                                <p>Total Container washer</p>
                             </div>
-
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card rightMiddle">
-
-                            <p class="text-center mt-2 ">Unloaded Containers of Plan(yesterday)</p>
-                            <div class="d-flex justify-content-around align-items-center mt-4">
-                                <div><img src="img/Picture1.png" alt="" width="60px"></div>
-                                <h3 style="color: #006A67;">35.1%</h3>
-                                <h1 style="color: #E3A837;">20</h1>
-                            </div>
+                            <div class="w-100 chart-container" id="chart6"></div>
 
                         </div>
                     </div>
@@ -122,17 +108,26 @@
                 <div class="row mt-2">
                     <div class="col-4">
                         <div class="card rightMiddle2 ">
+                            <div class="text-center p-4">
+                                <p>Bin Collection according to plan by Day</p>
+                            </div>
                             <div class="w-100 chart-container" id="chart1"></div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="card rightMiddle2 ">
+                        <div class="text-center p-4">
+                                <p>Road Cleaned according to plan by Day</p>
+                            </div>
                             <div class="w-100 chart-container" id="chart2"></div>
 
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="card rightMiddle2">
+                        <div class="text-center p-4">
+                                <p>Bin Washed according to plan by Quaterly</p>
+                            </div>
                             <div class="w-100 chart-container" id="chart3"></div>
 
                         </div>
