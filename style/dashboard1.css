@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(246, 246, 246);
+    background-color: #EAEAEA;
 }
 
 * {
@@ -19,20 +19,27 @@ body {
 }
 
 .sideCard2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    min-height: 180px;
+}
+
+.sideCard3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     margin-bottom: 10px;
     min-height: 160px;
 }
 
-.sideCard3 {
-    background-color: white;
-    margin-bottom: 10px;
-    min-height: 120px;
-}
-
 .sideCard4 {
     margin-bottom: 10px;
     width: 100%;
+
 
 }
 
@@ -56,7 +63,7 @@ body {
 
 .third {
     min-height: 350px;
-    margin-top: 10px;
+    margin-top: 10px !important;
 
 }
 
@@ -71,6 +78,7 @@ body {
     background-color: white;
     margin-bottom: 10px;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,10 +98,12 @@ body {
 
 
 .sqrbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    min-height: 100px;
+    height: 143px;
     width: 50%;
-    margin: 5px;
 
 }
 
@@ -111,18 +121,22 @@ nav .nav-header {
     align-items: center;
     padding: 0 30px;
 }
-.nav-header .language select{
+
+.nav-header .language select {
     border: none;
-    background-color:  rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246);
     padding: 5px 15px;
     margin-right: 5px;
 }
-.nav-header .language-clear button{
+
+.nav-header .language-clear button {
     border: none;
-    background-color:  rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246);
     padding: 5px 15px;
 }
-.card{
+
+.card {
     border: none !important;
     border-radius: 0px !important;
 }
+

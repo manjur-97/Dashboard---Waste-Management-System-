@@ -20,8 +20,9 @@
             </div>
             <div class="d-flex">
                 <div class="language">
-                    <select name="" id="">
-                        <option value="">English</option>
+                    <select name="" id="languageSelector">
+                        <option value="en">English</option>
+                        <option value="ar">Arabic</option>
                     </select>
 
                 </div>
@@ -33,9 +34,9 @@
         </div>
 
     </nav>
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-3 ">
+    <div>
+        <div class="row p-0 m-0">
+            <div class="col-3 p-0 m-0 ps-2">
 
                 <div class="card sideCard2">
                     <p class="text-center mt-3">Total Containers</p>
@@ -61,7 +62,7 @@
                     </div>
 
                 </div>
-                <div class="card sideCard3 d-flex justify-content-center align-items-center ">
+                <div class="card sideCard3 d-flex justify-content-center align-items-center" style="background-color: #F2E29B;">
 
                     <div class="d-flex">
                         <p class="me-3">Containers <br> Containers percentage</p>
@@ -74,20 +75,20 @@
 
                     <div class=" d-flex justify-content-between">
 
-                        <div class="card sqrbox  ">
-                            <p class="text-center mt-2">Something</p>
+                        <div class="card sqrbox me-1 mb-2">
+                            <p class="text-center mt-2">Total Collected Bins</p>
                             <div class="d-flex justify-content-center align-items-center">
                                 <i style="color: #006A67;" class="fa-solid fa-circle-check me-2"></i>
                                 <h4 style="color: #006A67;" class="mb-0">10,132</h3>
                             </div>
                         </div>
 
-                        <div class="card sqrbox ">
-                            <p class="text-center mt-2">Something</p>
+                        <div class="card sqrbox ms-1 mb-2">
+                            <p class="text-center mt-2">Total Not Collected Bins</p>
 
                             <div class="d-flex justify-content-center align-items-center">
-                                <i style="color: #FDC648;" class="fa-solid fa-circle-xmark me-2"></i>
-                                <h4 style="color: #FDC648;" class="mb-0">8,323</h3>
+                                <i style="color: #EF6A6A;" class="fa-solid fa-circle-xmark me-2"></i>
+                                <h4 style="color: #EF6A6A;" class="mb-0">8,323</h3>
                             </div>
 
 
@@ -95,22 +96,21 @@
                     </div>
                     <div class="  d-flex justify-content-between">
 
-                        <div class="card  sqrbox  ">
+                        <div class="card  sqrbox  me-1 mb-2">
 
-                            <p class="text-center mt-2">Something</p>
+                            <p class="text-center p-0 m-0 mt-2">Percentange of Unload</p>
 
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center percentange_of_unload" id="percentange_of_unload">
 
-                                <h3 style="color: #006A67;" class="mb-0">10,48%</h3>
+
                             </div>
 
                         </div>
-                        <div class="card sqrbox  ">
+                        <div class="card sqrbox  ms-1 mb-2">
 
-                            <p class="text-center mt-2">Something</p>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <i style="color: #006A67;" class="fa-solid fa-down-long me-2"></i>
-                                <h3 style="color: #006A67;" class="mb-0">10,132</h3>
+                            <p class="text-center p-0 m-0 mt-2">Percentange of Unload</p>
+                            <div class=" percentange_of_unload2" id="percentange_of_unload2">
+
                             </div>
 
                         </div>
@@ -118,58 +118,72 @@
                 </div>
 
             </div>
-            <div class="col-9 ">
-                <!-- <div class="row first mt-2">
-                    <div class="d-flex justify-content-between  gap-2">
-                        <div class=" rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="">Last 60 Days</h6>
+            <div class="col-9 p-0 m-0">
+
+                <div class="row second p-0 m-0 mb-2">
+                    <div class="d-flex">
+
+                        <div class=" col-3 p-0 m-0">
+                            <div class="card rightMiddle p-0 m-0">
+                                <div>Dischange According Condition</div>
+                                <div id="chart1" class="rightMiddle">
+
+                                </div>
+
+                            </div>
                         </div>
 
+                        <div class=" col-4">
+                            <div class="ms-2">
+                                <div class="card  rightMiddle p-0 m-0" id="chart2">
+                                    <div>Dischange Status(Operation plans)</div>
+                                    <div class="rightMiddle" id="chart2">
 
-                        <div class=" rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="">Buhi NA</h6>
-                        </div>
-                        <div class=" rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="">Quarterty</h6>
-                        </div>
-                        <div class=" rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="">Buhi NA</h6>
-                        </div>
-                        <div class=" rightCard d-flex align-items-end justify-content-center">
-                            <h6 class="">Buhi NA</h6>
-                        </div>
-                    </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                </div> -->
-
-                <div class="row second">
-                    <div class=" d-flex">
-
-                        <div class=" box col-3 ">
-                            <div class="card rightMiddle" id="chart1"></div>
-                        </div>
-
-                        <div class=" box col-4">
-                            <div class="card rightMiddle p-3" id="chart2"></div>
 
                         </div>
 
-                        <div class=" box col-5">
-                            <div class="card rightMiddle" id="chart3"></div>
+                        <div class="col-5 ">
+                            <div class="ms-2 ">
+                                <div class="card rightMiddle p-0 m-0 " id="chart3">
+                                    <div>Dischange Status(Contract)</div>
+                                    <div class="rightMiddle" id="chart3">
+
+                                    </div>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
                 </div>
 
-                <div class="row third mt-2">
+                <div class="row third p-0 m-0">
                     <div class="d-flex justify-content-between">
 
-                        <div class=" col-6">
-                            <div class="card rightMiddle2 w-100 h-100" id="chart4"></div>
+                        <div class="col-6 ">
+                            <div class="card m-0 me-1 ">
+                                <div class="text-center mt-2">
+                                    Emptied and Unempited containers by day
+                                </div>
+                                <div class="rightMiddle2 " id="chart4">
+
+                                </div>
+                            </div>
 
                         </div>
-                        <div class=" col-6">
-                            <div class=" card rightMiddle2 w-100 h-100" id="chart5"></div>
+                        <div class="col-6">
+                            <div class=" card m-0 ms-1 ">
+                                <div class="text-center mt-2">
+                                    Percentange of emptied containers(Operation plan)
+                                </div>
+                                <div class="rightMiddle2" id="chart5">
+
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -185,6 +199,17 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/dashboard1.js"></script>
 
+
+    <script>
+     
+
+        var languageSelector = document.getElementById('languageSelector');
+        languageSelector.addEventListener('change', function() {
+            var selectedLanguage = this.value;
+            
+            changeLanguage(selectedLanguage);
+        });
+    </script>
 
 </body>
 

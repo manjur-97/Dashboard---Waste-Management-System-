@@ -5,6 +5,7 @@ var options = {
         type: 'donut',
     },
     colors: ['#EDC43C', '#5AB89D'],
+
     plotOptions: {
         pie: {
             dataLabels: {
@@ -44,6 +45,9 @@ var options = {
         type: 'bar',
         height: 350,
         stacked: true,
+        toolbar: {
+            show: false // Hide the chart's menu
+        }
     },
     plotOptions: {
         bar: {
@@ -64,12 +68,10 @@ var options = {
         width: 1,
         colors: ['#fff']
     },
-    title: {
-        text: 'Title Here'
-    },
     xaxis: {
-        categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+        categories: ['Project-1', 'Project-1', 'Project-2', 'Project-3', 'Project-4', 'Project-5', 'Project-6', 'Project-7', 'Project-8'],
         labels: {
+            show: false, // Hide x-axis labels
             formatter: function (val) {
                 return val + "K"
             }
@@ -106,113 +108,207 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chart2"), options);
 chart.render();
 
-
-
 var options = {
     series: [{
-        name: 'Marine Sprite',
-        data: [44, 55, 41, 37, 22, 43, 21],
+        data: [44, 55, 41, 37, 22],
         color: '#EDC43C'
     }, {
-        name: 'Striking Calf',
-        data: [53, 32, 33, 52, 13, 43, 32],
+        data: [53, 32, 33, 52, 13],
         color: '#5AB89D'
     }],
     chart: {
         type: 'bar',
-        height: 350
-    },
-    annotations: {
-        xaxis: [{
-            x: 500,
-            borderColor: '#00E396',
-            label: {
-                borderColor: '#00E396',
-                style: {
-                    color: '#fff',
-                    background: '#00E396',
-                },
-                text: 'X annotation',
-            }
-        }],
-        yaxis: [{
-            y: 'July',
-            y2: 'September',
-            label: {
-                text: 'Y annotation'
-            }
-        }]
+        height: 350,
+        stacked: true,
+        toolbar: {
+            show: false // Hide the chart's menu
+        }
     },
     plotOptions: {
         bar: {
             horizontal: true,
-        }
+            dataLabels: {
+                total: {
+                    enabled: false,
+                    offsetX: 0, // Adjust the position of the total value label
+                    style: {
+                        fontSize: '13px',
+                        fontWeight: 900
+                    }
+                }
+            }
+        },
     },
-    dataLabels: {
-        enabled: true
+    stroke: {
+        width: 1,
+        colors: ['#fff']
     },
     xaxis: {
-        categories: ['June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    },
-    grid: {
-        xaxis: {
-            lines: {
-                show: true
+        categories: [2008, 2009, 2010, 2011, 2012],
+        labels: {
+            show: false, // Hide x-axis labels
+            formatter: function (val) {
+                return val + "K"
             }
         }
     },
     yaxis: {
+        title: {
+            text: undefined
+        },
         reversed: true,
-        axisTicks: {
-            show: true
-        }
     },
-    legend: {
-        show: false // Hide the legend
+    tooltip: {
+        y: {
+            formatter: function (val) {
+                return val + "K"
+            }
+        }
     },
     fill: {
         colors: ['#EDC43C', '#5AB89D'],
         opacity: 1
     },
+    legend: {
+        show: false, // Hide the legend
+        position: 'top',
+        horizontalAlign: 'left',
+        offsetX: 40
+    },
+    dataLabels: {
+        enabled: false // Hide the bottom level (footer)
+    }
 };
 
 var chart = new ApexCharts(document.querySelector("#chart3"), options);
 chart.render();
 
+
+
+
 var options = {
     series: [{
-        name: 'series1',
-        data: [31, 40, 28, 51, 42, 109, 100]
-    }, {
-        name: 'series2',
-        data: [11, 32, 45, 32, 34, 52, 41]
-    }],
+        name: 'north',
+        data: [{
+            x: 1996,
+            y: 322
+          },
+          {
+            x: 1997,
+            y: 124
+          },
+          {
+            x: 1998,
+            y: 229
+          },
+          {
+            x: 1999,
+            y: 0
+          },
+          {
+            x: 2000,
+            y: 348
+          },
+
+        ]
+      },
+      {
+        name: 'south',
+        data: [{
+            x: 1996,
+            y: 10
+          },
+          {
+            x: 1997,
+            y: 190
+          },
+          {
+            x: 1998,
+            y: 350
+          },
+          {
+            x: 1999,
+            y: 77
+          },
+          {
+            x: 2000,
+            y: 35
+          },
+
+        ]
+      }
+    ],
     chart: {
-        height: 350,
-        type: 'area'
+      type: 'area',
+      height: 350,
+      toolbar: {
+        show: false // Hide the toolbar
+      }
     },
     dataLabels: {
-        enabled: true // Enable data labels
-    },
-    markers: {
-        size: 0 // Hide markers
+      enabled: true // Enable data labels
     },
     stroke: {
-        curve: 'smooth'
+      curve: 'straight'
+    },
+    title: {
+      text: '', // Empty title to hide it
     },
     xaxis: {
-        type: 'datetime',
-        categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+      type: 'datetime',
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      tickAmount: 4,
+      floating: false,
+
+      labels: {
+        style: {
+          colors: '#8e8da4',
+        },
+        offsetY: -7,
+        offsetX: 0,
+      },
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 0.5
     },
     tooltip: {
-        x: {
-            format: 'dd/MM/yy HH:mm'
-        },
+      x: {
+        format: "yyyy",
+      },
+      fixed: {
+        enabled: false,
+        position: 'topRight'
+      },
+      show: false
     },
-};
+    grid: {
+      yaxis: {
+        lines: {
+          offsetX: -30
+        }
+      },
+      padding: {
+        left: 20
+      }
+    }
+  };
 
 var chart = new ApexCharts(document.querySelector("#chart4"), options);
 chart.render();
+
 
 
 
@@ -277,3 +373,51 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart5"), options);
 chart.render();
+
+var options = {
+    series: [70],
+    chart: {
+        height: 120,
+        width: 150,
+        type: 'radialBar',
+    },
+    plotOptions: {
+        radialBar: {
+            hollow: {
+                size: '50%',
+            },
+            dataLabels: {
+                show: false,
+            }
+        },
+    },
+    
+};
+
+var chart = new ApexCharts(document.querySelector("#percentange_of_unload"), options);
+chart.render();
+
+var options = {
+    series: [70],
+    chart: {
+        height: 120,
+        width: 120,
+        type: 'radialBar',
+    },
+    plotOptions: {
+        radialBar: {
+            hollow: {
+                size: '50%',
+            },
+            dataLabels: {
+                show: false,
+            }
+        },
+    },
+    labels: [''],
+};
+
+var chart = new ApexCharts(document.querySelector("#percentange_of_unload2"), options);
+chart.render();
+
+
