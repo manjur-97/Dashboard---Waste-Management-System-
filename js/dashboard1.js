@@ -1,4 +1,4 @@
-
+// Dischange According Condition Chart start here
 var options = {
     series: [44, 55],
     chart: {
@@ -32,6 +32,7 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chart1"), options);
 chart.render();
 
+// Dischange According Condition Chart end here
 
 var options = {
     series: [{
@@ -376,9 +377,8 @@ chart.render();
 
 var options = {
     series: [70],
+    colors: ['#5AB89E'],
     chart: {
-        height: 120,
-        width: 150,
         type: 'radialBar',
     },
     plotOptions: {
@@ -388,20 +388,23 @@ var options = {
             },
             dataLabels: {
                 show: false,
+            },
+            track: {
+                background: '#EAEAEA', // Set the color of the track
             }
-        },
-    },
-    
+        }
+    }
 };
 
 var chart = new ApexCharts(document.querySelector("#percentange_of_unload"), options);
 chart.render();
 
+
 var options = {
     series: [70],
+    colors: ['#FFD625'],
     chart: {
-        height: 120,
-        width: 120,
+       
         type: 'radialBar',
     },
     plotOptions: {
@@ -411,7 +414,8 @@ var options = {
             },
             dataLabels: {
                 show: false,
-            }
+            },
+          
         },
     },
     labels: [''],
