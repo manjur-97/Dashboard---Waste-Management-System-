@@ -193,119 +193,119 @@ var options = {
         data: [{
             x: 1996,
             y: 322
-          },
-          {
+        },
+        {
             x: 1997,
             y: 124
-          },
-          {
+        },
+        {
             x: 1998,
             y: 229
-          },
-          {
+        },
+        {
             x: 1999,
             y: 0
-          },
-          {
+        },
+        {
             x: 2000,
             y: 348
-          },
+        },
 
         ]
-      },
-      {
+    },
+    {
         name: 'south',
         data: [{
             x: 1996,
             y: 10
-          },
-          {
+        },
+        {
             x: 1997,
             y: 190
-          },
-          {
+        },
+        {
             x: 1998,
             y: 350
-          },
-          {
+        },
+        {
             x: 1999,
             y: 77
-          },
-          {
+        },
+        {
             x: 2000,
             y: 35
-          },
+        },
 
         ]
-      }
+    }
     ],
     chart: {
-      type: 'area',
-      height: 350,
-      toolbar: {
-        show: false // Hide the toolbar
-      }
+        type: 'area',
+        height: 350,
+        toolbar: {
+            show: false // Hide the toolbar
+        }
     },
     dataLabels: {
-      enabled: true // Enable data labels
+        enabled: true // Enable data labels
     },
     stroke: {
-      curve: 'straight'
+        curve: 'straight'
     },
     title: {
-      text: '', // Empty title to hide it
+        text: '', // Empty title to hide it
     },
     xaxis: {
-      type: 'datetime',
-      axisBorder: {
-        show: false
-      },
-      axisTicks: {
-        show: false
-      }
+        type: 'datetime',
+        axisBorder: {
+            show: false
+        },
+        axisTicks: {
+            show: false
+        }
     },
     yaxis: {
-      tickAmount: 4,
-      floating: false,
+        tickAmount: 4,
+        floating: false,
 
-      labels: {
-        style: {
-          colors: '#8e8da4',
+        labels: {
+            style: {
+                colors: '#8e8da4',
+            },
+            offsetY: -7,
+            offsetX: 0,
         },
-        offsetY: -7,
-        offsetX: 0,
-      },
-      axisBorder: {
-        show: false,
-      },
-      axisTicks: {
-        show: false
-      }
+        axisBorder: {
+            show: false,
+        },
+        axisTicks: {
+            show: false
+        }
     },
     fill: {
-      opacity: 0.5
+        opacity: 0.5
     },
     tooltip: {
-      x: {
-        format: "yyyy",
-      },
-      fixed: {
-        enabled: false,
-        position: 'topRight'
-      },
-      show: false
+        x: {
+            format: "yyyy",
+        },
+        fixed: {
+            enabled: false,
+            position: 'topRight'
+        },
+        show: false
     },
     grid: {
-      yaxis: {
-        lines: {
-          offsetX: -30
+        yaxis: {
+            lines: {
+                offsetX: -30
+            }
+        },
+        padding: {
+            left: 20
         }
-      },
-      padding: {
-        left: 20
-      }
     }
-  };
+};
 
 var chart = new ApexCharts(document.querySelector("#chart4"), options);
 chart.render();
@@ -404,7 +404,7 @@ var options = {
     series: [70],
     colors: ['#FFD625'],
     chart: {
-       
+
         type: 'radialBar',
     },
     plotOptions: {
@@ -415,7 +415,7 @@ var options = {
             dataLabels: {
                 show: false,
             },
-          
+
         },
     },
     labels: [''],
@@ -423,5 +423,50 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#percentange_of_unload2"), options);
 chart.render();
+
+// map start here
+
+$(document).ready(function () {
+    // jvectormap data
+    var visitorsData = {
+        US: 398, // USA
+        SA: 400, // Saudi Arabia
+        CA: 1000, // Canada
+        DE: 500, // Germany
+        FR: 760, // France
+        CN: 300, // China
+        AU: 700, // Australia
+        BR: 600, // Brazil
+        IN: 800, // India
+        GB: 320, // Great Britain
+        RU: 3000 // Russia
+    }
+    // World map by jvectormap
+    $('#world-map').vectorMap({
+        map: 'usa_en',
+        backgroundColor: 'transparent',
+        regionStyle: {
+            initial: {
+                fill: 'rgba(255, 255, 255, 0.7)',
+                'fill-opacity': 1,
+                stroke: 'rgba(0,0,0,.2)',
+                'stroke-width': 1,
+                'stroke-opacity': 1
+            }
+        },
+        series: {
+            regions: [{
+                values: visitorsData,
+                scale: ['#ffffff', '#0154ad'],
+                normalizeFunction: 'polynomial'
+            }]
+        },
+        onRegionLabelShow: function (e, el, code) {
+            if (typeof visitorsData[code] !== 'undefined') {
+                el.html(el.html() + ': ' + visitorsData[code] + ' new visitors')
+            }
+        }
+    })
+});
 
 

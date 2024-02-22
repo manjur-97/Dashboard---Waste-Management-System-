@@ -73,11 +73,23 @@ body {
 
 }
 
-.rightMiddle,
-.rightMiddle2 {
+.rightMiddle {
     background-color: white;
     margin-bottom: 10px;
     height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 3px;
+
+}
+
+.rightMiddle2 {
+    background-color: white;
+    margin-bottom: 10px;
+    min-height: 440px;
     width: 100%;
     display: flex;
     justify-content: center;
