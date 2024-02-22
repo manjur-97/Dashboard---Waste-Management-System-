@@ -145,8 +145,8 @@
                         <div class="col-md-12 col-lg-3 p-0 m-0 mb-md-2">
                             <div class="ms-2" style="height: 100%;">
                                 <div class="card rightMiddle p-0 m-0">
-                                    <div class="english_value">Dischange According Condition</div>
-                                    <div class="arabic_value" style="display: none;">الاستبدال حسب الحالة</div>
+                                    <div class="english_value mt-3">Dischange According Condition</div>
+                                    <div class="arabic_value mt-3" style="display: none;">الاستبدال حسب الحالة</div>
                                     <div id="chart1" class="rightMiddle pie_chart">
 
                                     </div>
@@ -169,8 +169,8 @@
                         <div class="col-md-12 col-lg-4 p-0 m-0 mb-md-2">
                             <div class="ms-2">
                                 <div class="card  rightMiddle p-0 m-0" id="chart2">
-                                    <div class="english_value">Dischange Status(Operation plans)</div>
-                                    <div class="arabic_value" style="display: none;">حالة التغيير (خطط التشغيل)</div>
+                                    <div class="english_value mt-3">Dischange Status(Operation plans)</div>
+                                    <div class="arabic_value mt-3" style="display: none;">حالة التغيير (خطط التشغيل)</div>
                                     <div class="rightMiddle" id="chart2">
 
                                     </div>
@@ -183,8 +183,8 @@
                         <div class="col-md-12 col-lg-5 p-0 m-0 ">
                             <div class="ms-2 ">
                                 <div class="card rightMiddle p-0 m-0 " id="chart3">
-                                    <div class="english_value">Dischange Status(Contract)</div>
-                                    <div class="arabic_value" style="display: none;">حالة الاستبدال (العقد)</div>
+                                    <div class="english_value mt-3">Dischange Status(Contract)</div>
+                                    <div class="arabic_value mt-3" style="display: none;">حالة الاستبدال (العقد)</div>
                                     <div class="rightMiddle" id="chart3">
 
                                     </div>
@@ -216,7 +216,7 @@
                                 <div class="card  rightMiddle2 p-0 m-0">
                                     <div class="english_value">Percentange of emptied containers(Operation plan)</div>
                                     <div class="arabic_value" style="display: none;">نسبة الحاويات الفارغة (خطة التشغيل)</div>
-                                    <div  id="world-map" style="height: 350px; width: 100%;">
+                                    <div  id="world-map" style="height: 360px; width: 100%;">
 
                                     </div>
                                 </div>
